@@ -3,5 +3,4 @@ go-sandbox
 
 Sandbox for Go projects.
 
-
-http://sandbox0.soon.it:8082/
+This repo is automatically build and deployed to: http://sandbox0.soon.it:8082/
