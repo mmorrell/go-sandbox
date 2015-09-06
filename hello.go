@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "./util"
 
 func main(){
 	fmt.Printf("Hello, World!\n")
@@ -10,4 +11,7 @@ func main(){
 	fmt.Println(b, c, 3, "\n")
 
 	fmt.Println("And now git ssh works! Cleann!\n")
+
+ 	util.Tester()
+
 }
