@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import "./util"
+//import "go-sandbox/util"
 
 func main(){
 	fmt.Printf("Hello, World!\n")
@@ -10,8 +10,8 @@ func main(){
 	var b, c int = 1, 2
 	fmt.Println(b, c, 3, "\n")
 
-	fmt.Println("And now git ssh works! Cleann!\n")
+	fmt.Println("And now git ssh works! Cleann! and build fixed...\n")
 
- 	util.Tester()
+ 	//util.Tester()
 
 }
