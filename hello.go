@@ -9,5 +9,5 @@ func main(){
 	var b, c int = 1, 2
 	fmt.Println(b, c, 3, "\n")
 
-	fmt.Println("And now git ssh works! test123456\n")
+	fmt.Println("And now git ssh works! test1234567\n")
 }
