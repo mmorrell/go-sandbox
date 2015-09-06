@@ -1,17 +1,15 @@
 package main
 
-import "fmt"
-//import "go-sandbox/util"
+import (
+	"fmt"
+	"net/http"
+)
 
-func main(){
-	fmt.Printf("Hello, World!\n")
-	fmt.Printf("Hello from Windows, too!\n")
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+}
 
-	var b, c int = 1, 2
-	fmt.Println(b, c, 3, "\n")
-
-	fmt.Println("And now git ssh works! Cleann! and build fixed....\n")
-
- 	//util.Tester()
-
+func main() {
+	http.HandleFunc("/", handler)
+	http.ListenAndServe(":8082", nil)
 }
